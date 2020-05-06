@@ -1,15 +1,15 @@
-class ZCL_DODO_APACK definition
-  public
-  final
-  create public .
+CLASS zcl_dodo_apack DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
 
-public section.
+  PUBLIC SECTION.
 
-  interfaces ZIF_APACK_MANIFEST .
+    INTERFACES zif_apack_manifest .
 
-  methods CONSTRUCTOR .
-protected section.
-private section.
+    METHODS constructor .
+  PROTECTED SECTION.
+  PRIVATE SECTION.
 ENDCLASS.
 
 
