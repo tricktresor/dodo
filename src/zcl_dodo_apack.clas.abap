@@ -5,7 +5,7 @@ CLASS zcl_dodo_apack DEFINITION
 
   PUBLIC SECTION.
 
-    INTERFACES zif_apack_manifest .
+    INTERFACES if_apack_manifest .
 
     METHODS constructor .
   PROTECTED SECTION.
@@ -19,12 +19,12 @@ CLASS ZCL_DODO_APACK IMPLEMENTATION.
 
   METHOD constructor.
 
-    zif_apack_manifest~descriptor-group_id        = 'tricktresor.de'.
-    zif_apack_manifest~descriptor-artifact_id     = 'dodo'.
-    zif_apack_manifest~descriptor-version         = '0.1.1'.
-    zif_apack_manifest~descriptor-git_url         = 'https://github.com/tricktresor/dodo'.
-    zif_apack_manifest~descriptor-dependencies    = VALUE #( ).
-    zif_apack_manifest~descriptor-repository_type = ``.
+    if_apack_manifest~descriptor-group_id        = 'tricktresor.de'.
+    if_apack_manifest~descriptor-artifact_id     = 'dodo'.
+    if_apack_manifest~descriptor-version         = '0.1.1'.
+    if_apack_manifest~descriptor-git_url         = 'https://github.com/tricktresor/dodo'.
+    if_apack_manifest~descriptor-dependencies    = VALUE #( ).
+    if_apack_manifest~descriptor-repository_type = ``.
 
   ENDMETHOD.
 ENDCLASS.
